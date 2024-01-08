@@ -48,7 +48,6 @@
   flex-direction: column;
   justify-content: center;
   margin: auto;
-
   font-style: normal;
   line-height: normal;
 }
@@ -69,7 +68,7 @@
 .discount {
   width: 85%;
   max-width: 1220px;
-  margin: 50px auto;
+  margin: 100px auto;
   text-align: center;
   font-family: Inter;
 }
@@ -101,10 +100,108 @@
   margin-bottom: 30px;
 }
 
-.discount .discount-img{
+.discount .discount-img {
   max-width: 650px;
   margin: auto;
 }
-.discount .discount-img img{
+
+.discount .discount-img img {
+  width: 100%;
+}
+
+.midnight-party {
+  position: relative;
+  width: 85%;
+  max-width: 1220px;
+  margin: 100px auto;
+  border-radius: 16px;
+
+}
+
+.midnight-party-content{
+  display: flex;
+  flex-direction: column;
+}
+
+.midnight-party .main-img {
+  width: 100%;
+}
+
+.midnight-party .midnight-party-content {
+  color: white;
+  position: absolute;
+  width: 100%;
+  top: 40%;
+  z-index: 10;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  transform: translateY(-30%);
+  justify-content: space-around;
+}
+
+.midnight-party .midnight-party-text h1 {
+  max-width: 525px;
+  color: #FFF;
+  font-family: Merriweather;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 60px;
+  letter-spacing: 7.04px;
+  margin-bottom: 24px;
+
+}
+
+.midnight-party .midnight-party-text p {
+  max-width: 560px;
+  color: rgba(255, 255, 255, 0.80);
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  margin-bottom: 48px;
+}
+
+.midnight-party .midnight-party-text button {
+  color: #FFF;
+  text-align: center;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: none;
+  padding: 5px 20px;  
+}
+
+
+.midnight-party .midnight-party-text button:hover {
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.80);
+}
+
+.midnight-party-gradient{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0; 
+  background: linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0.918) 0%,
+        rgba(0, 0, 0, 0.048) 100%
+    );
+    border-radius: 16px;
+}
+
+.midnight-party-year-img{
+  max-width: 280px;
+}
+
+.midnight-party-year-img img{
   width: 100%;
 }
