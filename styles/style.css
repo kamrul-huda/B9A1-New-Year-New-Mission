@@ -1,21 +1,50 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:wght@400;900&family=Playfair+Display&family=Poppins&display=swap');
 
-
 * {
   margin: 0;
   padding: 0;
 }
 
-.section-title {
+.body-size{
+  width: 85%;
+  max-width: 1220px;
+  position: relative;
+}
+
+p {
+  color: rgba(255, 255, 255, 0.80);
+  font-family: Inter;
+  font-size: 16x;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+h1{
   font-family: Merriweather;
+  font-style: normal;
+  line-height: normal;
+}
+
+button{
+  color: #FFF;
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  border: none;
+}
+
+.important {
+  color: #F00;
+}
+
+.banner-text h1 {
   font-weight: 900;
 }
 
 .banner {
-  width: 85%;
-  max-width: 1220px;
   margin: 30px auto;
-  position: relative;
   text-align: center;
   border-radius: 16px;
 }
@@ -48,8 +77,6 @@
   flex-direction: column;
   justify-content: center;
   margin: auto;
-  font-style: normal;
-  line-height: normal;
 }
 
 .banner .banner-title .banner-text h3 {
@@ -60,43 +87,37 @@
 }
 
 .banner .banner-title .banner-text h1 {
-  font-size: 50px;
-  line-height: 60px;
+  font-size: 60px;
+  line-height: 70px;
 }
 
-
-.discount {
-  width: 85%;
-  max-width: 1220px;
+.discount {  
   margin: 100px auto;
   text-align: center;
   font-family: Inter;
+  font-style: normal;
+  line-height: normal;
 }
 
-.discount-text h1 {
+.discount .discount-text h1 {
   color: #F00;
   font-size: 70px;
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
   margin-bottom: 30px;
+  font-family: Inter !important;
 }
 
-.discount-text h3 {
+.discount .discount-text h3 {
   color: #F00;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
+  font-size: 18px;  
+  font-weight: 500;  
   margin-bottom: 16px;
 }
 
-.discount-text h2 {
+.discount .discount-text h2 {
   color: #070211;
   font-size: 36px;
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
   margin-bottom: 30px;
 }
 
@@ -115,86 +136,50 @@
   max-width: 1220px;
   margin: 100px auto;
   border-radius: 16px;
-
-}
-
-.midnight-party-content {
-  display: flex;
-  flex-direction: column;
-}
-
-.midnight-party .main-img {
-  width: 100%;
 }
 
 .midnight-party .midnight-party-content {
-  color: white;
-  position: absolute;
-  width: 100%;
-  top: 40%;
-  z-index: 10;
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  transform: translateY(-30%);
-  justify-content: space-around;
+  background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.801),
+          rgba(0, 0, 0, 0.11)
+      ),
+      url('../resources/Vectorrr.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 15px;
+  padding: 70px 100px;
 }
 
 .midnight-party .midnight-party-text h1 {
   max-width: 525px;
-  color: #FFF;
-  font-family: Merriweather;
-  font-size: 50px;
-  font-style: normal;
+  color: #FFF; 
+  font-size: 50px;  
   font-weight: 900;
   line-height: 60px;
   letter-spacing: 7.04px;
   margin-bottom: 24px;
-
 }
 
 .midnight-party .midnight-party-text p {
   max-width: 560px;
-  color: rgba(255, 255, 255, 0.80);
-  font-family: Inter;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 18px;
   margin-bottom: 48px;
 }
 
 .midnight-party .midnight-party-text button {
-  color: #FFF;
-  text-align: center;
-  font-family: Inter;
-  font-size: 14px;
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
   text-transform: uppercase;
   background-color: transparent;
-  border: none;
   padding: 5px 20px;
 }
-
 
 .midnight-party .midnight-party-text button:hover {
   cursor: pointer;
   outline: 1px solid rgba(255, 255, 255, 0.80);
-  /* border: 1px solid rgba(255, 255, 255, 0.80); */
-}
-
-.midnight-party-gradient {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background: linear-gradient(90deg,
-      rgba(0, 0, 0, 0.918) 0%,
-      rgba(0, 0, 0, 0.048) 100%);
-  border-radius: 16px;
 }
 
 .midnight-party-year-img {
@@ -206,25 +191,22 @@
 }
 
 .event {
-  position: relative;
-  width: 85%;
-  max-width: 1220px;
   margin: 0 auto;
+}
 
+.event p {
+  color: black;
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 50px;
 }
 
 .event .event-text {
-  text-align: center;
-  font-family: Inter;
-  font-size: 26px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 40px;
+  text-align: center;  
   position: relative;
   text-transform: capitalize;
   padding: 100px 380px;
   z-index: 10;
-
 }
 
 .event-gradient {
@@ -236,22 +218,10 @@
   background: linear-gradient(180deg, rgba(255, 0, 0, 0.10) 0%, rgba(255, 0, 0, 0.00) 100%);
 }
 
-.important {
-  color: #F00;
-}
-
 .event .event-text button {
   background-color: #F00;
-  padding: 10px 20px;
-  color: #FFF;
-  text-align: center;
-  font-family: Inter;
-  font-size: 16px;
-  font-style: normal;
+  padding: 10px 20px; 
   font-weight: 700;
-  line-height: normal;
-  text-transform: uppercase;
-  border: none;
   margin-top: 20px;
   border-radius: 5px;
 }
@@ -260,14 +230,9 @@
   cursor: pointer;
   outline: 1px solid rgba(255, 255, 255, 0.80);
   scale: 1.1;
-  /* border: 1px solid rgba(255, 255, 255, 0.80); */
 }
 
-
 .coming-soon {
-  position: relative;
-  width: 85%;
-  max-width: 1220px;
   margin: 100px auto;
   border-radius: 16px;
   display: flex;
@@ -293,22 +258,14 @@
 
 .coming-soon .coming-soon-text h1 {
   color: #070211;
-  font-family: Merriweather;
   font-size: 36px;
-  font-style: normal;
   font-weight: 900;
-  line-height: normal;
   text-transform: capitalize;
   margin-bottom: 20px;
 }
 
 .coming-soon .coming-soon-text p {
   color: rgba(7, 2, 17, 0.60);
-  font-family: Inter;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
 }
 
 .coming-soon .coming-soon-img {
@@ -322,29 +279,23 @@
 .coming-soon .coming-soon-text-img {
   max-width: 300px;
   max-height: 100%;
+  align-self: flex-end;
 }
 
-.coming-soon .coming-soon-img img {
+.coming-soon .coming-soon-img img {  
   width: 100%;
 }
 
-
 .coming-soon .coming-soon-text-img .coming-soon-year-text h1 {
   color: #F00;
-  font-family: Inter;
-  font-size: 48px;
+  font-family: Inter !important;
+  font-size: 40px;
   font-weight: 700;
   margin-bottom: 12px;
 }
 
 .coming-soon .coming-soon-text-img .coming-soon-year-text p {
   color: rgba(7, 2, 17, 0.60);
-  font-family: Inter;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-  /* 160% */
   margin-bottom: 35px;
 }
 
@@ -353,13 +304,10 @@
 }
 
 .coming-soon-text-second-img img {
-  width: 100%;
+  width: 100%; 
 }
 
 .holiday-sale {
-  position: relative;
-  width: 85%;
-  max-width: 1220px;
   margin: 100px auto;
   border-radius: 16px;
 }
@@ -369,45 +317,29 @@
   margin: 0 150px;
 }
 
-.holiday-sale .holiday-sale-text h4 {
+.holiday-sale .holiday-sale-text h3 {
   color: #070211;
   font-family: Inter;
-  font-size: 16px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-
 }
 
 .holiday-sale .holiday-sale-text h1 {
-  text-align: center;
-  font-family: Merriweather;
+  text-align: center; 
   font-size: 54px;
-  font-style: normal;
   font-weight: 900;
-  line-height: normal;
   margin-top: 16px;
 }
 
 .holiday-sale .holiday-sale-text p {
   color: rgba(7, 2, 17, 0.60);
-  text-align: center;
-  font-family: Inter;
-  font-size: 16px;
-  font-style: normal;
+  text-align: center;  
   font-weight: 500;
-  line-height: 32px;
-  /* 160% */
+  line-height: 32px; 
   margin-top: 28px;
   margin-bottom: 60px;
-}
-
-.holiday-sale {
-  width: 85%;
-  max-width: 1220px;
-  margin: 100px auto;
-  border-radius: 16px;
-  position: relative;
 }
 
 .holiday-sale-img {
@@ -443,15 +375,12 @@
   top: 20%;
 }
 
-.portfolio {
-  width: 85%;
-  max-width: 1220px;
+.portfolio { 
   margin: 100px auto;
-  border-radius: 16px;
-  position: relative;
+  border-radius: 16px; 
 }
 
-.portfolio-content {
+.portfolio .portfolio-content {
   width: 100%
 }
 
@@ -471,39 +400,25 @@
 }
 
 .portfolio .portfolio-text h1 {
-  color: #070211;
-  font-family: Merriweather;
+  color: #070211; 
   font-size: 36px;
-  font-style: normal;
   font-weight: 900;
-  line-height: normal;
   text-transform: capitalize;
   margin-bottom: 20px;
 }
 
 .portfolio .portfolio-text p {
   color: rgba(7, 2, 17, 0.60);
-  font-family: Inter;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 26px;
-  /* 160% */
   margin-bottom: 30px;
 }
 
-.portfolio-img-content {
+.portfolio .portfolio-content .portfolio-img-content {
   display: flex;
   gap: 10px;
   margin-bottom: 10px;
-
 }
 
-.text-img {
-  max-width: 400px;
-}
-
-.portfolio-img-content img {
+.portfolio .portfolio-content .portfolio-img-content img {
   width: 100%;
   border-radius: 17px;
 }
@@ -514,12 +429,9 @@
   scale: 1.01;
 }
 
-.subscribe {
-  width: 85%;
-  max-width: 1220px;
+.subscribe {  
   margin: 100px auto;
   border-radius: 16px;
-  position: relative;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -527,58 +439,47 @@
   background: rgba(255, 0, 0, 0.05);
 }
 
-.subscribe-img {
+.subscribe .subscribe-img {
   max-width: 150px;
   margin: 30px auto;
 }
 
-.subscribe-img img {
+.subscribe .subscribe-img img {
   width: 100%;
 }
 
-.subscribe-text h1 {
+.subscribe .subscribe-text h1 {
   color: #070211;
-  text-align: center;
-  font-family: Merriweather;
+  text-align: center;  
   font-size: 36px;
-  font-style: normal;
   font-weight: 900;
-  line-height: normal;
   text-transform: capitalize;
   margin-bottom: 25px;
 }
 
-.subscribe-text p {
+.subscribe .subscribe-text p {
   color: rgba(7, 2, 17, 0.60);
   text-align: center;
-  font-family: Inter;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 26px;
   width: 700px;
   margin: auto;
 }
 
-.subscribe-form{  
+.subscribe .subscribe-form {
   margin: 20px auto 30px;
   position: relative;
-  left: -8%;
-  /* position: relative; */
+  left: -8%; 
 }
 
-.email-input {
+.subscribe .subscribe-form .email-input {
   border-radius: 50px 0 0 50px;
   background: #FFF;
   width: 400px;
   height: 50px;
   padding: 0 0 0 30px;
   border: none;
-  
 }
 
-.btn-subscribe {
-  /* position: absolute; */
+.subscribe .subscribe-form .btn-subscribe {
   height: 50px;
   width: 200px;
   border-radius: 0px 50px 50px 0px;
@@ -586,10 +487,9 @@
   border: none;
   color: #FFF;
   position: absolute;
-  
 }
 
-.email-input::placeholder{
+.subscribe .subscribe-form .email-input::placeholder {
   color: rgba(7, 2, 17, 0.30);
   text-align: left;
   font-family: Inter;
@@ -597,28 +497,26 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  
 }
 
-.btn-subscribe:hover{
+.subscribe .subscribe-form .btn-subscribe:hover {
   cursor: pointer;
   scale: 1.01;
 }
 
-
-footer{
+footer {
   width: 100%;
   background-color: black;
 }
 
-.footer-content{
+.footer-content {
   width: 85%;
   max-width: 1220px;
   margin: auto;
 }
 
-.footer-address-contact, .footer-reserved-unsubscribe{
-
+.footer-address-contact,
+.footer-reserved-unsubscribe {
   display: flex;
   justify-content: space-between;
   color: #FFF;
@@ -629,34 +527,41 @@ footer{
   line-height: 25px;
 }
 
-.footer-address-contact{
+.footer-content .footer-address-contact {
   padding: 40px 0 20px 0;
 }
 
-.footer-reserved-unsubscribe{
+.footer-content .footer-reserved-unsubscribe {
   padding: 20px 0 40px 0;
 }
 
-.social-media-img{ 
+.footer-content .social-media-img {
   padding: 30px 0;
   display: flex;
   justify-content: center;
   gap: 3px;
 }
 
-.media-img{
+.footer-content .social-media-img .media-img {
   max-width: 64px;
 }
 
-.media-img img{
+.footer-content .social-media-img .media-img img {
   width: 80%;
 }
 
-.line{
+.footer-content .social-media-img .media-img:hover{
+  cursor: pointer;
+  scale: 1.1;
+}
+
+.footer-content .line {
   border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: 5px;
 }
 
-.footer-contact-align{
-  display: block; display: flex; gap:3px;
+.footer-content .footer-address-contact .footer-contact .footer-contact-align {
+  display: block;
+  display: flex;
+  gap: 3px;
 }
